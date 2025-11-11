@@ -3,8 +3,8 @@ class FlixCli < Formula
 
   desc "Stream and browse movies and shows directly from your terminal"
   homepage "https://github.com/DemonKingSwarn/flix-cli"
-  url "https://files.pythonhosted.org/packages/1b/8e/bd0116b54a217d4279cb6b5dd234af8a8aead18eb0f7ee0be2e076980737/flix_cli-1.8.0-py3-none-any.whl"
-  sha256 "31ff53676ea533f41e639ff2e96a6cf922c0e80a9f8c202d26c03d1e4886fb78"
+  url "https://files.pythonhosted.org/packages/97/bd/4321a44c5b67e9cfe3649b97bc932e646ceb16d12e61aed57291599c69a0/flix_cli-1.8.0.tar.gz"
+  sha256 "014fa0ab2f47ddbb1af466a91dba2c056e37187a2750028ce3f9019cd19961fe"
   license "GPL-3.0-or-later"
 
   depends_on "python@3.12"
@@ -52,7 +52,9 @@ class FlixCli < Formula
   end
 
   def install
-    virtualenv_install_with_resources
+    venv = virtualenv_create(libexec, "python3")
+    venv.pip_install resources
+    venv.pip_install_and_link buildpath
   end
 
 end
