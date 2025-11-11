@@ -14,7 +14,13 @@ class FlixCli < Formula
   end
 
   on_macos do
-    depends_on cask: "iina"
+    def caveats
+      <<~EOS
+        ⚠️IINA is required for playback on macOS.
+        Install it manually:
+          brew install --cask iina
+      EOS
+    end
   end
 
   def install
