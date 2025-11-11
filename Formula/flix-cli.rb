@@ -7,7 +7,14 @@ class FlixCli < Formula
 
   depends_on "python@3.12"
   depends_on "ffmpeg"
-  depends_on "iina"
+
+  on_linux do 
+    depends_on "mpv"
+  end
+
+  on_macos do
+    depends_on cask: "iina"
+  end
 
   def install
     system "pip3", "install", "--upgrade", "pip"
