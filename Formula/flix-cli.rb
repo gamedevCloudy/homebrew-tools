@@ -26,7 +26,7 @@ class FlixCli < Formula
     end
   end
 
-  esource "httpx" do
+  resource "httpx" do
     url "https://files.pythonhosted.org/packages/2a/39/e50c7c3a983047577ee07d2a9e53faf5a69493943ec3f6a384bdc792deb2/httpx-0.28.1-py3-none-any.whl"
     sha256 "d909fcccc110f8c7faf814ca82a9a4d816bc5a6dbfea25d6591d6985b8ba59ad"
   end
