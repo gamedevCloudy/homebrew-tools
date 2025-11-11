@@ -7,6 +7,7 @@ class FlixCli < Formula
 
   depends_on "python@3.12"
   depends_on "ffmpeg"
+  depends_on "fzf"
 
   on_linux do 
     depends_on "mpv"
