@@ -24,7 +24,11 @@ class FlixCli < Formula
   end
 
   def install
-    system "pip3", "install", "--upgrade", "pip"
-    system "pip3", "install","--prefix=#{prefix}", "flix-cli"
+    system "pip3", "install", "--user", "--upgrade", "pip"
+    system "pip3", "install", "--user", "--prefix=#{prefix}", "flix-cli"
+  end
+
+  def uninstall
+    system "pip3", "uninstall", "--user", "-y", "flix-cli"
   end
 end
