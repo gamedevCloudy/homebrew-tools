@@ -2,18 +2,14 @@ class Luffy < Formula
 
   desc "Stream and browse movies and shows directly from your terminal"
   homepage "https://github.com/DemonKingSwarn/luffy"
-  url "https://github.com/DemonKingSwarn/luffy/releases/download/v1.0.6/luffy_macos"
-  sha256 "1dab265a09dd03348cd0a13c29cefdfca27fa7b7ffef515c48b8560355ef3002"
+  url "https://github.com/DemonKingSwarn/luffy/releases/download/v1.0.7/luffy_macos"
+  sha256 "9bdbb30302aae1f44c7b2fd2e2a44a58f59e9753b180ec7c845dd636a40feab5"
   license "GPL-3.0-or-later"
 
   depends_on "chafa"
   depends_on "libsixel"
   depends_on "fzf"
   depends_on "yt-dlp"
-
-  on_linux do 
-    depends_on "mpv"
-  end
 
   on_macos do
     def caveats
