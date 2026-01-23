@@ -2,8 +2,8 @@ class Luffy < Formula
 
   desc "Stream and browse movies and shows directly from your terminal"
   homepage "https://github.com/DemonKingSwarn/luffy"
-  url "https://github.com/DemonKingSwarn/luffy/releases/download/v1.0.8/luffy-macos.aarch64"
-  sha256 "d65ad1d0abb77dcd7b79cddd80eb097a9aec234904b115dc338a5407b631dbe9"
+  url "https://github.com/DemonKingSwarn/luffy/releases/download/v1.0.9/luffy-macos.aarch64"
+  sha256 "6ca3a7e93751a10f0263cd2c9f299adc40b877f326359b5629ba33d4c94d1231"
   license "GPL-3.0-or-later"
 
   depends_on "chafa"
