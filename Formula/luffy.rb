@@ -2,8 +2,8 @@ class Luffy < Formula
 
   desc "Stream and browse movies and shows directly from your terminal"
   homepage "https://github.com/DemonKingSwarn/luffy"
-  url "https://github.com/DemonKingSwarn/luffy/releases/download/v1.0.7/luffy_macos"
-  sha256 "9bdbb30302aae1f44c7b2fd2e2a44a58f59e9753b180ec7c845dd636a40feab5"
+  url "https://github.com/DemonKingSwarn/luffy/releases/download/v1.0.8/luffy-macos.aarch64"
+  sha256 "d65ad1d0abb77dcd7b79cddd80eb097a9aec234904b115dc338a5407b631dbe9"
   license "GPL-3.0-or-later"
 
   depends_on "chafa"
@@ -22,7 +22,7 @@ class Luffy < Formula
   end
 
   def install
-    bin.install "luffy_macos" => "luffy"
+    bin.install "luffy-macos.aarch64" => "luffy"
   end
 
   test do
