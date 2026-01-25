@@ -18,18 +18,18 @@ class Luffy < Formula
   end
 
   on_arm do
-    url "https://github.com/DemonKingSwarn/luffy/releases/download/v1.0.11/luffy-macos.aarch64"
-    sha256 "0104ee30775648ed294dd48866afcb61e54b961db385694fa2cd2ffa8f3615d3"
+    url "https://github.com/DemonKingSwarn/luffy/releases/download/v1.0.12/luffy-macos-arm64"
+    sha256 "1ef670492e4e0c0a1be134da80cae642a9e7cc1c4111cc7179d979dec3862406"
   end
 
   on_intel do
-    url "https://github.com/DemonKingSwarn/luffy/releases/download/v1.0.11/luffy-macos.amd64"
-    sha256 "788bcb471edf1868382bc9d2c98d198710188f84678face297952d9534259571"
+    url "https://github.com/DemonKingSwarn/luffy/releases/download/v1.0.12/luffy-macos-amd64"
+    sha256 "ce28b40d3e080af06a352d3c7e309bc27532d8aff6606475abba727609bc0ce4"
   end
 
 
   def install
-    bin.install Dir["luffy-macos.*"].first => "luffy"
+    bin.install Dir["luffy-macos-*"].first => "luffy"
   end
 
   test do
