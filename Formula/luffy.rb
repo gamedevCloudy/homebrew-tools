@@ -18,13 +18,13 @@ class Luffy < Formula
   end
 
   on_arm do
-    url "https://github.com/DemonKingSwarn/luffy/releases/download/v1.0.12/luffy-macos-arm64"
-    sha256 "1ef670492e4e0c0a1be134da80cae642a9e7cc1c4111cc7179d979dec3862406"
+    url "https://github.com/DemonKingSwarn/luffy/releases/download/v1.0.13/luffy-macos-arm64"
+    sha256 "1603ae27736e50bafbea3944b4cbc3e4d4d54adc6ce00d2ff140d225197612fc"
   end
 
   on_intel do
-    url "https://github.com/DemonKingSwarn/luffy/releases/download/v1.0.12/luffy-macos-amd64"
-    sha256 "ce28b40d3e080af06a352d3c7e309bc27532d8aff6606475abba727609bc0ce4"
+    url "https://github.com/DemonKingSwarn/luffy/releases/download/v1.0.13/luffy-macos-amd64"
+    sha256 "b72097886a9faed42b31c97df302fc266465d97f4f4404938055e80f1b149323"
   end
 
 
