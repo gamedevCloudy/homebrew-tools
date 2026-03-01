@@ -8,6 +8,7 @@ class Luffy < Formula
   depends_on "libsixel"
   depends_on "fzf"
   depends_on "yt-dlp"
+  depends_on "ffmpeg"
 
   def caveats
    <<~EOS
@@ -18,13 +19,13 @@ class Luffy < Formula
   end
 
   on_arm do
-    url "https://github.com/DemonKingSwarn/luffy/releases/download/v1.1.0/luffy-darwin-arm64"
-    sha256 "90b7f50e979fc97315e3a3b4ca303406aad6312117c9df50ea14c06cfc3d081a"
+    url "https://github.com/DemonKingSwarn/luffy/releases/download/v1.1.1/luffy-darwin-arm64"
+    sha256 "9bcc0dabdd89a97e648acb2e064a6b8718e4be0e672ecbf1ced32350b9e91601"
   end
 
   on_intel do
-    url "https://github.com/DemonKingSwarn/luffy/releases/download/v1.1.0/luffy-darwin-amd64"
-    sha256 "1435520bd6963b9bd160797b9815c11350af4e976fb37ef3d9b5d5dd80eb7b60"
+    url "https://github.com/DemonKingSwarn/luffy/releases/download/v1.1.1/luffy-darwin-amd64"
+    sha256 "2577475f2b7b142e439959a076847415b06170dd96b0e0961e990f4d2ecf999f"
   end
 
 
