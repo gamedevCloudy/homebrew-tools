@@ -1,4 +1,4 @@
-class Luffy < Formula
+class Fast < Formula
 
   desc "cli tool for fast.com"
   homepage "https://github.com/DemonKingSwarn/fast-cli"
