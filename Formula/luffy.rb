@@ -19,13 +19,13 @@ class Luffy < Formula
   end
 
   on_arm do
-    url "https://github.com/DemonKingSwarn/luffy/releases/download/v1.1.4/luffy-darwin-arm64"
-    sha256 "aa1bb8e88cedabc4f26a71bddf6648f0abc313d73a9d76d7e8e406e619d1be31"
+    url "https://github.com/DemonKingSwarn/luffy/releases/download/v1.1.5/luffy-darwin-arm64"
+    sha256 "6b495337330aad2ed609d609f6abbac98800e142f3699ae56c32236fbe8d896e"
   end
 
   on_intel do
-    url "https://github.com/DemonKingSwarn/luffy/releases/download/v1.1.4/luffy-darwin-amd64"
-    sha256 "8565340574e32ffc409aaeed4ebb0bcc0d432bb6018be0e59e4ca88e46cd02c2"
+    url "https://github.com/DemonKingSwarn/luffy/releases/download/v1.1.5/luffy-darwin-amd64"
+    sha256 "c23a8877d96be0a9064c0d89aa95d2b9cdb24f967e71b7731a65fe3af620b0e7"
   end
 
 
