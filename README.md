@@ -4,3 +4,7 @@
 ```sh
 brew tap gamedevCloudy/tools
 ```
+
+```sh
+brew install --cask nanolight
+```

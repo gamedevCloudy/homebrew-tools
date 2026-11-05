@@ -1,0 +1,30 @@
+# Points Casks/nanolight.rb at nanolight's latest release. "latest" there is
+# only set after the release passes its own verification, so prereleases are skipped.
+name: Bump nanolight
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  bump:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          tag=$(gh api repos/justrach/nanolight/releases/latest -q .tag_name)
+          version="${tag#v}"
+          grep -q "version \"$version\"" Casks/nanolight.rb && { echo "already $version"; exit 0; }
+          sha=$(gh release download "$tag" --repo justrach/nanolight -p nanolight-macos-arm64.dmg.sha256 -O - | cut -d' ' -f1)
+          echo "$sha" | grep -Eq '^[0-9a-f]{64}$'
+          sed -i -e "s/^  version \".*\"/  version \"$version\"/" -e "s/^  sha256 \".*\"/  sha256 \"$sha\"/" Casks/nanolight.rb
+          git config user.name "github-actions[bot]"
+          git config user.email "41898783+github-actions[bot]@users.noreply.github.com"
+          git commit -am "nanolight $version"
+          git push
